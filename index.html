@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <meta name="description" content="Tilmelding til prøvetræning på KBH Ynglinge">
+
+    <title>KBH Ynglinge | Prøvetræning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=League+Spartan:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- =========================================
+             INTRO
+        ========================================== -->
+
+        <section id="introView" class="view hero-view active" aria-labelledby="introTitle">
+
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <img src="assets/logo.png" alt="KBH Ynglinge" class="logo">
+
+                <div class="hero-heading">
+
+                    <p class="hero-kicker">
+                        Tilmelding til
+                    </p>
+
+                    <h1 id="introTitle">
+                        <span>Prøvetræning</span>
+                        <small>på KBH Ynglinge</small>
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <div class="intro-loader" aria-hidden="true">
+                <span></span>
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             FORMULAR
+        ========================================== -->
+
+        <section id="formView" class="view form-view" aria-labelledby="formTitle">
+
+            <div class="form-page">
+
+                <div class="form-wrapper">
+
+                    <header class="form-header">
+
+                        <img src="assets/logo.png" alt="KBH Ynglinge" class="form-logo">
+
+                        <p class="eyebrow dark">
+                            PRØVETRÆNING
+                        </p>
+
+                        <h1 id="formTitle">
+                            Tilmeld dig
+                        </h1>
+
+                        <p class="form-intro">
+                            Udfyld dine oplysninger nedenfor, så vender vi tilbage
+                            med information omkring din prøvetræning.
+                        </p>
+
+                    </header>
+
+
+                    <form id="signupForm" novalidate>
+
+                        <!-- NAVN -->
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Navn
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <input type="text" id="name" name="name" placeholder="Dit fulde navn"
+                                    autocomplete="name" required>
+
+                            </div>
+
+                            <p class="error-message" id="nameError">
+                                Indtast dit navn.
+                            </p>
+
+                        </div>
+
+
+                        <!-- FØDSELSDAG -->
+
+                        <div class="form-group">
+
+                            <label for="birthday">
+                                Fødselsdag
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <input type="date" id="birthday" name="birthday" required>
+
+                            </div>
+
+                            <p class="error-message" id="birthdayError">
+                                Vælg din fødselsdag.
+                            </p>
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <input type="email" id="email" name="email" placeholder="navn@email.dk"
+                                    autocomplete="email" inputmode="email" required>
+
+                            </div>
+
+                            <p class="error-message" id="emailError">
+                                Indtast en gyldig email.
+                            </p>
+
+                        </div>
+
+
+                        <!-- TELEFON -->
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Telefonnummer
+                            </label>
+
+                            <div class="input-wrapper phone-wrapper">
+
+                                <span class="country-code">
+                                    +45
+                                </span>
+
+                                <input type="tel" id="phone" name="phone" placeholder="12 34 56 78" autocomplete="tel"
+                                    inputmode="numeric" maxlength="11" required>
+
+                            </div>
+
+                            <p class="error-message" id="phoneError">
+                                Indtast et gyldigt telefonnummer.
+                            </p>
+
+                        </div>
+
+
+                        <p id="formError" class="form-submit-error" role="alert"></p>
+
+                        <button type="submit" class="submit-button" id="submitButton">
+                            <span class="button-text">
+                                Tilmeld mig
+                            </span>
+
+                            <span class="button-arrow">
+                                →
+                            </span>
+                        </button>
+
+                    </form>
+
+
+                    <p class="privacy-text">
+                        Dine oplysninger bruges udelukkende i forbindelse med
+                        prøvetræning hos KBH Ynglinge.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             SUCCESS
+        ========================================== -->
+
+        <section id="successView" class="view hero-view" aria-labelledby="successTitle">
+
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content success-content">
+
+
+
+                <img src="assets/logo.png" alt="KBH Ynglinge" class="logo success-logo">
+
+                <div class="hero-heading success-heading">
+
+                    <p class="hero-kicker">
+                        Tilmelding modtaget
+                    </p>
+
+                    <h1 id="successTitle">
+
+                        <span>
+                            Tak for din<br>
+                            tilmelding
+                        </span>
+
+                        <small>
+                            Vi glæder os til at se dig!
+                        </small>
+
+                    </h1>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
