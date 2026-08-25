@@ -35,7 +35,7 @@ const formError = document.getElementById("formError");
 // INTRO → FORM
 // ==========================================
 
-const INTRO_DURATION = 3500;
+const INTRO_DURATION = 4000;
 
 window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
