@@ -1080,3 +1080,56 @@ input[type="date"] {
     transition-duration: 0.01ms !important;
   }
 }
+/* =========================================
+   TRIAL INFO
+========================================= */
+
+.trial-info {
+  position: absolute;
+
+  left: 50%;
+  bottom: 74px;
+
+  z-index: 3;
+
+  width: calc(100% - 48px);
+  max-width: 480px;
+
+  transform: translateX(-50%);
+
+  text-align: center;
+
+  color: white;
+}
+
+/* DATOER */
+
+.trial-info-date {
+  margin-bottom: 7px;
+
+  font-family: "League Spartan", sans-serif;
+
+  font-size: 1rem;
+  font-weight: 650;
+
+  line-height: 1.2;
+
+  letter-spacing: 0.01em;
+
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* STED */
+
+.trial-info-location {
+  font-family: "Inter", sans-serif;
+
+  font-size: 0.72rem;
+  font-weight: 500;
+
+  line-height: 1.3;
+
+  letter-spacing: 0.04em;
+
+  color: rgba(255, 255, 255, 0.64);
+}
